@@ -1,2 +1,2 @@
-const text: number = "World";
+const text: string = "World";
 console.log(`Hello, ${text}`);
