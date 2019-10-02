@@ -1,0 +1,15 @@
+name: TypeScript Type Check
+
+on: [push]
+
+jobs:
+  type-check:
+    name: Check TypeScript typings
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - run: yarn
+      - run: yarn type-check
