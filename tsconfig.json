@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "es2015",
+    "module": "es2015", // ESM は webpack が変形する
     "esModuleInterop": true,
     // 段階的に有効化
     "alwaysStrict": false, // "use strict" 有効化
